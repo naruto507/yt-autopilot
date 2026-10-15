@@ -1,0 +1,9 @@
+flask
+python-dotenv
+anthropic
+edge-tts
+requests
+pillow
+tzdata
+google-auth-oauthlib
+google-api-python-client

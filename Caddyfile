@@ -1,0 +1,4 @@
+# replace with your own domain (its DNS A record must point to the server)
+yourdomain.com {
+    reverse_proxy 127.0.0.1:5000
+}

@@ -1,0 +1,13 @@
+[Unit]
+Description=YouTube Autopilot
+After=network-online.target
+
+[Service]
+User=ytbot
+WorkingDirectory=/opt/yt-autopilot
+ExecStart=/opt/yt-autopilot/venv/bin/python app.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
