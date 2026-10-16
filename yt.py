@@ -9,7 +9,7 @@ BASE = os.getenv("BASE_URL", "http://localhost:5000")
 _flows = {}
 
 def start():
-    f = Flow.from_client_secrets_file("client_secret.json", SCOPES, redirect_uri=BASE + "/oauth")
+   # f = Flow.from_client_secrets_file("client_secret.json", SCOPES, redirect_uri=BASE + "/oauth")
     url, state = f.authorization_url(access_type="offline", prompt="consent")
     _flows[state] = f
     return url
